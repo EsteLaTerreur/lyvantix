@@ -1,0 +1,30 @@
+.container {
+    margin: 30px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.long-text {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.titre-texte {
+    display: block; /* Par défaut, un h1 est un élément de type block */
+    font-size: 2em; /* Taille de police relativement grande */
+    margin-top: 0.67em; /* Marge en haut */
+    margin-bottom: 0.67em; /* Marge en bas */
+    margin-left: 0; /* Réinitialise la marge à gauche */
+    margin-right: 0; /* Réinitialise la marge à droite */
+    font-weight: bold; /* Gras par défaut */
+}
+
+.titre-texte .hidden-word {
+    color: blue; 
+    /* text-shadow: 0 0 0 black; */
+  }
