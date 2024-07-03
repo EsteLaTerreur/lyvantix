@@ -8,16 +8,21 @@ function traitement_txt(contenu) {
   var new_titre = lignes[0]; // récup titre
 
   // Transformer le titre
-  var titreAvecSpans = new_titre.split(/([a-zA-Z]+)/).map(function(part) {
-      if (part.match(/[a-zA-Z]+/)) {
-          return '<span>' + part + '</span>';
-      } else {
-          return Array.from(part).map(function(char) {
-              return '<span>' + char + '</span>';
-          }).join('');
-      }
-  }).join('');
-
+  var titreAvecSpans = new_titre.split('\n').map(function(line) {
+        if (line.trim().startsWith('<br>')) {
+                return line; // ignore les balises <br>
+        } else {
+            return line.split(/([a-zA-ZéÉàÀùèÈâêîôûÇçÂÊÎÔÛœŒ]+)/).map(function(part) {
+                if (part.match(/[a-zA-ZéÉàÀùèÈâêîôûÇçÂÊÎÔÛœŒ]+/)) {
+                    return '<span>' + part + '</span>';
+                } else {
+                    return Array.from(part).map(function(char) {
+                        return '<span>' + char + '</span>';
+                    }).join('');
+                }
+            }).join('');
+        }
+    }).join('<br>'); // recompo avec des balises <br>
   lignes.shift(); // suppr titre du corps
   var nouveauContenu = lignes.join('\n'); // recompo avec des sauts de ligne
 
@@ -26,8 +31,8 @@ function traitement_txt(contenu) {
       if (line.trim().startsWith('<br>')) {
           return line; // ignore les balises <br>
       } else {
-          return line.split(/([a-zA-ZéÉàÀùèÈâêîôûÇçÂÊÎÔÛ]+)/).map(function(part) {
-              if (part.match(/[a-zA-ZéÉàÀùèÈâêîôûÇçÂÊÎÔÛ]+/)) {
+          return line.split(/([a-zA-ZéÉàÀùèÈâêîôûÇçÂÊÎÔÛœŒ]+)/).map(function(part) {
+              if (part.match(/[a-zA-ZéÉàÀùèÈâêîôûÇçÂÊÎÔÛœŒ]+/)) {
                   return '<span>' + part + '</span>';
               } else {
                   return Array.from(part).map(function(char) {
@@ -196,7 +201,7 @@ function revelerCaracteres() {
 var titreAReveler = document.querySelectorAll('#titreADeviner span');
 for ( var n = 0; n < titreAReveler.length; n++ ) {
     var element = titreAReveler[n];
-    if ([".", ",","'",'-',':','!','?','/',' '].includes(element.textContent)) {
+    if ([".", ",","'",'-',':','!','?','/',' ','"'].includes(element.textContent)) {
         element.style.backgroundColor = '#f9f9f9';
         element.style.color = 'black';
         element.style.userSelect = 'auto';
@@ -208,7 +213,7 @@ for ( var n = 0; n < titreAReveler.length; n++ ) {
 var elements_a_Reveler = document.querySelectorAll('#corpsADeviner span');
 for ( var n = 0; n < elements_a_Reveler.length; n++ ) {
     var element = elements_a_Reveler[n];
-    if ([".", ",","'",'-',':','!','?','/',' '].includes(element.textContent)) {
+    if ([".", ",","'",'-',':','!','?','/',' ','"'].includes(element.textContent)) {
         element.style.backgroundColor = '#f9f9f9';
         element.style.color = 'black';
         element.style.userSelect = 'auto';
@@ -238,7 +243,6 @@ function decliner(mot){
         const newListItem = document.createElement("li");
         newListItem.textContent = nb_mots_testes + ". " + mot;
         listeMotsTestes = document.getElementById("liste_mots_testes");
-        console.log(listeMotsTestes)
         listeMotsTestes.appendChild(newListItem);
         nb_mots_testes+=1;
     }   
