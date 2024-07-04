@@ -76,6 +76,7 @@ function chargerTexte() {
     })
     .then(contenu => {
         console.log("Chargement du texte");
+        console.log(cheminFichierTexte)
         var texteAvecSpans;
         var titreAvecSpans;
         t = traitement_txt(contenu);
