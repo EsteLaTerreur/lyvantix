@@ -1,6 +1,6 @@
 // constantes 
 var couleur_du_cache = 'black';
-var cheminFichierTexte = 'texte8.txt';
+var cheminFichierTexte = 'texte6.txt';
 
 // traitement texte
 function traitement_txt(contenu) {
