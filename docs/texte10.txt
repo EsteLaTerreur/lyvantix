@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Le sens de la vie
 J'ai voulu dormir, et j'ai ferm� les yeux
 Sans m�me voir que le ciel �tait bleu
@@ -47,3 +48,52 @@ J'ai trouv� le sens de la raison qui m'entra�ne
 � chaque pas sur le devant de la sc�ne
 J'ai trouv� le sens de la vie que je m�ne
 Et je l'aime
+=======
+Elle est d'ailleurs
+Elle a de ces lumières au fond des yeux
+Qui rendent aveugles ou amoureux
+Elle a des gestes de parfum
+Qui rendent bête ou rendent chien
+Mais si lointaine dans son coeur
+Pour moi c'est sûr, elle est d'ailleurs
+Elle a de ces manières de ne rien dire
+Qui parlent au bout des souvenirs
+Cette manière de traverser
+Quand elle s'en va chez le boucher
+Quand elle arrive à ma hauteur
+Pour moi c'est sûr, elle est d'ailleurs
+Et moi je suis tombé en esclavage
+De ce sourire, de ce visage
+Et je lui dis "emmène-moi"
+Et moi je suis prêt à tous les sillages
+Vers d'autres lieux, d'autres rivages
+Mais elle passe et ne répond pas
+Les mots pour elle sont sans valeur
+Pour moi c'est sûr, elle est d'ailleurs
+Elle a ses longues mains de dentellière
+À damner l'âme d'un Vermeer
+Cette silhouette vénitienne
+Quand elle se penche à ses persiennes
+Ce geste je le sais par coeur
+Pour moi c'est sûr, elle est d'ailleurs
+Et moi je suis tombé en esclavage
+De ce sourire, de ce visage
+Et je lui dis "emmène-moi"
+Et moi je suis prêt à tous les sillages
+Vers d'autres lieux, d'autres rivages
+Mais elle passe et ne répond pas
+L'amour pour elle est sans valeur
+Pour moi c'est sûr, elle est d'ailleurs
+Et moi je suis tombé en esclavage
+De ce sourire, de ce visage
+Et je lui dis "emmène-moi"
+Et moi je suis prêt à tous les sillages
+Vers d'autres lieux, d'autres rivages
+Mais elle passe et ne répond pas
+Et moi je suis tombé en esclavage
+De ce sourire, de ce visage
+Et je lui dis "emmène-moi"
+Et moi je suis prêt à tous les sillages
+Vers d'autres lieux, d'autres rivages
+Mais elle passe et ne répond pas
+>>>>>>> 061d05e1b67b773081c0e4457d31457ec05ade03

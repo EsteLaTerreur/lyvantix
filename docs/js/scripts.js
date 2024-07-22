@@ -4,6 +4,7 @@ var cheminFichierTexte = 'texte10.txt';
 
 // traitement texte
 function traitement_txt(contenu) {
+  console.log("lancement du traitement du texte")
   var lignes = contenu.split('\n'); // split en lignes
   var new_titre = lignes[0]; // récup titre
 
@@ -76,6 +77,7 @@ function chargerTexte() {
     })
     .then(contenu => {
         console.log("Chargement du texte");
+        console.log(cheminFichierTexte)
         var texteAvecSpans;
         var titreAvecSpans;
         t = traitement_txt(contenu);
